@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jayakumar T's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('background.jpg'); background-size: cover;">
 
+  <!-- Main Heading -->
+  <header>
+    <div class="header-content">
+      <h1>Jayakumar T</h1>
+      <h2>Webdeveloper</h2>
+    </div>
+  </header>
+
+  <!-- Tabs Section -->
+  <div class="tabs">
+    <button class="tablinks" onclick="openTab(event, 'intro')">Introduction</button>
+    <button class="tablinks" onclick="openTab(event, 'skills')">Skills</button>
+    <button class="tablinks" onclick="openTab(event, 'projects')">Projects</button>
+    <button class="tablinks" onclick="openTab(event, 'links')">Links</button>
+    <button class="tablinks" onclick="openTab(event, 'resume')">Resume</button>
+  </div>
+
+  <!-- Introduction Section -->
+  <section id="intro" class="tabcontent">
+    <h2>Introduction</h2>
+    <p>Welcome to my portfolio! I'm Jayakumar T, a passionate web developer. With a strong foundation in HTML, CSS, and JavaScript, I love bringing creative ideas to life through innovative web solutions. Whether it's building responsive websites or crafting engaging user experiences, I strive to deliver high-quality results that exceed expectations.</p>
+    <p>Throughout my journey, I've had the opportunity to work on various projects that have honed my skills and expanded my knowledge in the field. From designing sleek user interfaces to implementing robust backend systems, I'm always eager to tackle new challenges and push the boundaries of what's possible in web development.</p>
+    <p>Feel free to explore my portfolio to see some of my recent projects and learn more about my skills and experience. If you have any questions or would like to collaborate on a project, don't hesitate to reach out!</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="tabcontent">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Java</li>
+     <li>C PROGRAM</li>
+      <li>JavaScript</li>
+      <li>Responsive Design</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="tabcontent">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>Description of Project 1
+<p>1. **Main Menu**: Upon execution, the program presents a menu with three options: College Information, Admission, and Fees Structure.</p>
+
+<p>2. **College Information**: Provides information about JK University, including its ranking, placements, and details about different departments such as Engineering, Medical, Arts and Science, and Management. Users can select a department to view more details about its admission process and cutoff marks.</p>
+<p>3. **Admission**: Allows prospective students to apply for admission to different courses offered by JK University. Depending on the selected course (Engineering, Medical, Arts and Science, or Management), the program collects relevant information such as the student's name, email, mobile number, and subject marks. It then determines the eligibility criteria based on cutoff marks and allows the student to apply if eligible.</p>
+
+<p>4. **Fees Structure**: Displays the fee structure for different courses offered by the university, including Engineering, Medical, Arts and Science, and Management. Users can select a course to view its corresponding fees.</p>
+
+5. **Summary**: The program seems well-structured, with clear sections for each functionality and appropriate prompts for user input. It utilizes file handling to store information about student admissions in a file named "jkinfo.doc." Additionally, it includes error handling for invalid inputs and provides options to return to the main menu or exit the program.
+
+
+
+</p>
+      <img src="projectc1.jpg" alt="Project 1">
+  <img src="projectc2.jpg" alt="Project 1">
+  <img src="projectc3.jpg" alt="Project 1">
+    </div>
+    <div class="project">
+      <h3>Project 2</h3>
+      <p>Description of Project 2
+<p>      The provided Java code is for an Airport Management application implemented using AWT (Abstract Window Toolkit) for GUI (Graphical User Interface). Here's a summary of its functionality:
+
+<p>1. **Class Structure**: The main class is named `AirportAWT`, which extends `Frame` and implements the `ActionListener` interface to handle button actions.</p>
+
+<p>2. **GUI Components**:
+   - `TextField`: Used to input the total number of runways, time remaining for planes in each runway to take off, and shelter time data.
+   - `Button`: A submit button to initiate input of runway and shelter data, and a calculate button to compute the optimal runway for the upcoming flight.
+   - `TextArea`: Used to display output messages and final results.</p>
+
+<p>3. **Event Handling**:
+   - The `actionPerformed` method handles button clicks. When the submit button is clicked, it reads the number of runways and creates input fields for takeoff and shelter times. When the calculate button is clicked, it computes the total time for each runway and determines the optimal runway for the next flight.</p>
+
+<p>4. **Functionality**:
+   - Upon submitting the runway and shelter data, the program calculates the total time for each runway (takeoff time + shelter time) and identifies the runway with the minimum total time, indicating the optimal runway for the next flight.
+   - The final output includes details such as the input takeoff and shelter times, the total number of runways, and the runway number for the upcoming flight.</p>
+
+<p>5. **Layout**:
+   - Initially, the layout is set with a flow layout.
+   - Upon submission, the layout switches to a grid layout to organize the input fields in a structured manner.</p> <p>6. **Window Closing**:
+   - The program exits gracefully when the window is closed by the user.
+
+Overall, this program provides a basic interface for managing runway and shelter data at an airport, helping to determine the optimal runway for the next flight based on the remaining time for takeoff and shelter for each runway. </p>
+
+
+</p>
+      <img src="1.jpg" alt="Project 2">
+<img src="2.jpg" alt="Project 2">
+<img src="3.jpg" alt="Project 2">
+<img src="4.jpg" alt="Project 2">
+    </div>
+  </section>
+
+  <!-- Links Section -->
+  <section id="links" class="tabcontent">
+    <h2>Links</h2>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/jayakumar-t-4871ab226">LinkedIn</a></li>
+
+      <li><a href="https://www.github.com/TKJayakumar">GitHub</a></li>
+    
+    </ul>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="tabcontent">
+    <h2>Resume</h2>
+    <a href="resume.pdf" download>Download Resume</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Jayakumar T</p>
+  </footer>
+
+
+
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.classList.add("active");
+    }
+  </script>
+
+</body>
+</html>
